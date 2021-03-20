@@ -4,11 +4,9 @@ import ReactDOM from "react-dom"
 import "normalize.css/normalize.css"
 import "./site.css"
 
-/*
+import TopBlockedDomains from "./TopBlockedDomains"
+
 ReactDOM.render(
-  <AppLocalizationProvider>
-    <App />
-  </AppLocalizationProvider>,
-  document.getElementById("root")
+  <TopBlockedDomains />,
+  document.getElementById("top-blocked-domains")
 )
-*/
