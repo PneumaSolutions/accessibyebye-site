@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 
 type BlockedDomain = {
   hostname: string
+  provider: string|null
   blockCount: number
 }
 
@@ -38,6 +39,7 @@ export default function TopBlockedDomains() {
                     <a target="_blank" href={`http://${domain.hostname}`}>
                       {domain.hostname}
                     </a>
+                    {domain.provider && ` (${domain.provider})`}
                   </th>
                   <td>{domain.blockCount}</td>
                 </tr>
